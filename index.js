@@ -51,7 +51,9 @@ function fillCitiesSelect() {
     }
     document.querySelector("#selectCity").innerHTML = cityOptionDataHTML;
 }
+
 fillCitiesSelect();
+
 function onChangeCity() {
     var cityName = document.querySelector("#selectCity").value;
     console.log(`you chose ${cityName}`);
