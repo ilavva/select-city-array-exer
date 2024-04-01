@@ -18,8 +18,8 @@ function onChangeCity() {
 
     var images = eval(`data_Cities.${cityName}.images`);
     var imagesHTML = "";
-    for (var i = 0; i < images.length; i++) {
-        imagesHTML += `<img src=${images[i]}>`;
+    for (item in images) {
+        imagesHTML += `<img src=${images[item]}>`;
     }
     document.querySelector("#cityGallery").innerHTML = imagesHTML;
 }

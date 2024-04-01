@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* https://colorhunt.co/palette/27374d526d829db2bfdde6ed */
+body {
+    font-size: large;
+    background-color: #DDE6ED;
+    color: #526D82;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    border:2px outset #526D82;
+    padding: 2rem;
+}
+
+#city {
+    min-width: 80%;
+    max-width: 300px;
+    height: fit-content;
+    
+    /* text-align: center; */
+    padding: 20px;
+    display: block;
+}
+#Info {
+    
+    color:#27374D;
+}
+
+#cityDescription {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#cityGallery {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+img {
+    height: 10rem;
+    width: auto;
+    box-shadow: 10px 5px 5px #9DB2BF;
+    border-radius: 0.4rem;
+}
+#cityGallery img {
+    height: 10rem;
+    width: 10rem;
+}
+select {
+    align-content: center;
+    font-size: larger;
+}
+
