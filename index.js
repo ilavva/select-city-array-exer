@@ -57,9 +57,9 @@ fillCitiesSelect();
 function onChangeCity() {
     var cityName = document.querySelector("#selectCity").value;
     console.log(`you chose ${cityName}`);
-
-    document.querySelector("#cityImg").setAttribute("src", eval(`data_Cities.${cityName}.imageURL`));
-    document.querySelector("#cityDescription").innerHTML = eval(`data_Cities.${cityName}.description`);
+    var cityData = eval(`data_Cities.${cityName}`);
+    document.querySelector("#cityImg").setAttribute("src", cityData.imageURL);
+    document.querySelector("#cityDescription").innerHTML = cityData.description;
 
     var images = eval(`data_Cities.${cityName}.images`);
     var imagesHTML = "";
