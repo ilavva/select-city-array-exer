@@ -12,7 +12,7 @@ function fillCitiesSelect() {
 function onChangeCity() {
     var cityName = document.querySelector("#selectCity").value;
     console.log(`you chose ${cityName}`);
-    var cityData = eval(`data_Cities.${cityName}`);
+    var cityData = data_Cities[cityName];
     document.querySelector("#cityImg").setAttribute("src", cityData.imageURL);
     document.querySelector("#cityDescription").innerHTML = cityData.description;
 
